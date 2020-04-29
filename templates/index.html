@@ -1,0 +1,37 @@
+﻿<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=yes">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="static/style.css" />
+    <script type="text/javascript" src="static/script.js"></script>
+    <title>Entrance Page</title>
+</head>
+<body>
+    <h1>Frequency Learning Tool<span class="subtitle"> v 0.2</span></h1>
+    <br />
+    <p class="main_page_p">
+        This website's purpose is to determine your word knowledge in English and offer you decks of flashcards that include the most
+        important words you should know, giving you a customized and ideal starting point to improve your English knowledge.
+        For methodology, sources used, and more information, <a href="/about">click here</a>. 
+    </p>
+    <br />
+    
+    <div>
+        <label for="lang">Please select your native language:</label>
+        <form method="POST" action="/">
+            <select class="lang_selection" id="lang" name="lang">
+                {% for i in langs.keys() %}
+                <option value="{{i}}">{{i.capitalize()}}</option>
+                {% endfor %}
+            </select>
+            <br />
+            <br />
+            <button type="submit" name="long_way" value="the_long_way">The long way</button>
+            <button type="submit" name="short_way" value="the_short_way">The short way</button>
+        </form>
+    </div>
+</body>
+</html>

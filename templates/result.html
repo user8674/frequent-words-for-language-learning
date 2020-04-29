@@ -1,0 +1,27 @@
+﻿<!DOCTYPE html>
+
+<html lang="tr">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=yes">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="static/style.css" />
+    <script type="text/javascript" src="static/script.js"></script>
+    <title>Result</title>
+</head>
+
+<body>
+    <br />
+    <br />
+    <br />
+    <p>
+        We have generated your personal decks. Here they are:
+    </p>
+    <p>
+        {% for deck_no, url in links.items() %}
+        <a href="{{url}}">Deck no {{deck_no}}</a>
+        <br />
+        {% endfor %}
+    </p>
+</body>
+</html>

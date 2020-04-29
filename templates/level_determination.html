@@ -1,0 +1,41 @@
+﻿<!DOCTYPE html>
+
+<html lang="tr">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=yes">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="static/style.css" />
+    <script type="text/javascript" src="static/script.js"></script>
+    <title>Level Determination</title>
+
+</head>
+<body>
+    <p>
+        [Example words from level {{level}}]
+        Please check the words you know and click "Proceed".
+    </p>
+    <br />
+    <div>
+        <form method="POST" action="/phase_one">
+            <table class="table table-bordered table-sm">
+                <tbody>
+                    {% for i in range(10, 110, 10) %}
+                        <tr>
+                            {% for j in range(i - 10, i) %}
+                                <td>
+                                    <label for="{{j}}">{{(hundred[j])[0]}}</label>
+                                    <input type="checkbox" value="{{j}}" id="{{j}}" name="checkbox">
+                                </td>
+                            {% endfor %}
+                        </tr>
+                    {% endfor %}
+                </tbody>
+            </table>
+            <br />
+            <input type="submit" value="Proceed" />
+        </form>
+    </div>
+    <br />
+</body>
+</html>
