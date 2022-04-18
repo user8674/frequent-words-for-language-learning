@@ -1,4 +1,3 @@
-# frequency-learning
 
 This project is for learning English with the help of frequency lists.
 You can choose your language (currently it supports 21 languages), then
