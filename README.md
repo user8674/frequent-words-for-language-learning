@@ -11,6 +11,8 @@ There is also another choice that will show the whole frequency list to the user
 let them choose all of the words they know, then it will generate custom decks for them
 with all of the words that they already know excluded.
 
+The database containing the words is not included in this repository.
+
 (Created as a final project for CS50X)
 
 As the tinycards application is discontinued, this project doesn't work anymore. [Here](https://youtu.be/DugOhepK6AI) is a demonstration of it from before.
