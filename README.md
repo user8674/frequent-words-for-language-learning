@@ -14,4 +14,4 @@ The database containing the words is not included in this repository.
 
 (Created as a final project for CS50X)
 
-As the tinycards application is discontinued, this project doesn't work anymore. [Here](https://youtu.be/DugOhepK6AI) is a demonstration of it from before.
+As the tinycards application is discontinued, this web application doesn't work anymore. [Here](https://youtu.be/DugOhepK6AI) is a demonstration of it from before.
